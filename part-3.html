@@ -1,0 +1,238 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ส่วนที่ 3</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="tab">
+    <form method="post" action="th_part1_add.php">
+        <!-- Section description -->
+        <h2>ส่วนที่ 3 ข้อมูลสะท้อนความยินดีจ่ายเพื่อลดความเสี่ยงการเกิดอุบัติเหตุในท้องถนน</h2>
+        <!------------ Questions set ------------>
+
+            <p>
+              สมมติว่าท่านต้องเดินทางไปยังจุดหมายปลายทางแห่งหนึ่ง โดยมี 2 เส้นทางในการเดินทาง คือ เส้นทาง ก และเส้นทาง ข ซึ่งประกอบไปด้วยระยะเวลา ค่าใช้จ่ายในการเดินทางและความเสี่ยงที่จะเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ) แตกต่างกัน 9 สถานการณ์ กรุณาgเลือกทางเลือกที่ท่านเลือกในแต่ละกรณี (ตอบทั้ง 9 กรณี)
+            </p>
+
+            <p>
+              <h4><u>กรณีที่ 1</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-1-1"><input type="radio" name="case-1" value="1" id="case-1-1">ก</label></td>
+      <td> 1 ชั่วโมง</td>
+      <td>300 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 36 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-1-2"><input type="radio" name="case-1" value="2" id="case-1-2">ข</label></td>
+      <td> 1 ชั่วโมง 20 นาที</td>
+      <td>900 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 15 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 2</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-2-1"><input type="radio" name="case-2" value="1" id="case-2-1">ก</label></td>
+      <td> 1 ชั่วโมง</td>
+      <td>450 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 15 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-2-2"><input type="radio" name="case-2" value="2" id="case-2-2">ข</label></td>
+      <td> 1 ชั่วโมง 20 นาที</td>
+      <td>600 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 12 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 3</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง </th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-3-1"><input type="radio" name="case-3" value="1" id="case-3-1">ก</label></td>
+      <td> 1 ชั่วโมง</td>
+      <td>600 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 18 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-3-2"><input type="radio" name="case-3" value="2" id="case-3-2">ข</label></td>
+      <td> 1 ชั่วโมง 20 นาที</td>
+      <td>300 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 25 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 4</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-4-1"><input type="radio" name="case-4" value="1" id="case-4-1">ก</label></td>
+      <td> 1 ชั่วโมง 30 นาที</td>
+      <td>600 บาท </td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 20 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-4-2"><input type="radio" name="case-4" value="2" id="case-4-2">ข</label></td>
+      <td>2 ชั่วโมง</td>
+      <td>300 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 20 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+
+              <p>
+              <h4><u>กรณีที่ 5</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-5-1"><input type="radio" name="case-5" value="1" id="case-5-1">ก</label></td>
+      <td> 1 ชั่วโมง 30 นาที</td>
+      <td>450 บาท </td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 36 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-5-2"><input type="radio" name="case-5" value="2" id="case-5-2">ข</label></td>
+      <td>2 ชั่วโมง</td>
+      <td>600 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 15 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 6</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-6-1"><input type="radio" name="case-6" value="1" id="case-6-1">ก</label></td>
+      <td> 1 ชั่วโมง 30 นาที</td>
+      <td>600 บาท </td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 15 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-6-2"><input type="radio" name="case-6" value="2" id="case-6-2">ข</label></td>
+      <td>2 ชั่วโมง</td>
+      <td>300 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 12 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 7</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-7-1"><input type="radio" name="case-7" value="1" id="case-7-1">ก</label></td>
+      <td> 2 ชั่วโมง 20 นาที</td>
+      <td>300 บาท </td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 15 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-7-2"><input type="radio" name="case-7" value="2" id="case-7-2">ข</label></td>
+      <td>3 ชั่วโมง</td>
+      <td>900 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 12 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 8</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-8-1"><input type="radio" name="case-8" value="1" id="case-8-1">ก</label></td>
+      <td> 2 ชั่วโมง 20 นาที</td>
+      <td>450 บาท </td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 18 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-8-2"><input type="radio" name="case-8" value="2" id="case-8-2">ข</label></td>
+      <td>3 ชั่วโมง</td>
+      <td>600 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 25 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+              <p>
+              <h4><u>กรณีที่ 9</u></h4>
+              <table style="width:100%">
+                <tr>
+      <th>เส้นทาง</th>
+      <th>เวลาในการเดินทาง</th>
+      <th>ค่าใช้จ่ายในการเดินทาง</th>
+      <th>ความเสี่ยงในการเกิดอุบัติเหตุรุนแรง (ตายและบาดเจ็บ)</th>
+    </tr>
+    <tr>
+      <td><label for="case-9-1"><input type="radio" name="case-9" value="1" id="case-9-1">ก</label></td>
+      <td> 2 ชั่วโมง 20 นาที</td>
+      <td>600 บาท </td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 36 ครั้ง</td>
+    </tr>
+    <tr>
+      <td><label for="case-9-2"><input type="radio" name="case-9" value="2" id="case-9-2">ข</label></td>
+      <td>3 ชั่วโมง</td>
+      <td>300 บาท</td>
+      <td>เดินทาง 100 ครั้ง เกิดอุบัติเหตุ 15 ครั้ง</td>
+    </tr>
+              </table>
+              </p>
+
+		<center>
+      <button type="reset" style="background-color:#ffaa95;">&nbsp;&nbsp;&nbsp;ล้างคำตอบ&nbsp;&nbsp;&nbsp;</button>
+  		<button type="submit" style="background-color:#6ab3eb;">&nbsp;&nbsp;&nbsp;หน้าถัดไป&nbsp;&nbsp;&nbsp;</button>
+		</center>
+		</br>
+		</form>
+
+    </div>
+
+</body>
+</html>

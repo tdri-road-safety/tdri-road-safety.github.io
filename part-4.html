@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ส่วนที่ 4</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="tab">
+	<form method="post" action="th_part5_add.php">
+        <!-- Section description -->
+        <h2>ส่วนที่ 4 มูลค่าความสูญเสียเชิงคุณภาพชีวิต</h2>
+        <!------------ Questions set ------------>
+
+            <p>
+              อุบัติเหตุทางถนนก่อให้เกิดความเสียหายต่อชีวิต จิตใจ และทรัพย์สิน ทั้งของผู้ประสบอุบัติเหตุ
+  และครอบครัว เกิดต้นทุนทางสังคมจากการจัดการอุบัติเหตุและปัญหาการจราจร รวมไปถึงอุปสรรค
+  ต่อการพัฒนาเศรษฐกิจจากการขาดแรงงาน ในการเกิดอุบัติเหตุ 1 ครั้ง ส่งผลให้เกิดต้นทุนความเสียหาย
+  เกี่ยวกับมนุษย์ที่เกิดขึ้น ได้แก่ ค่ารักษาพยาบาล ค่าปลงศพกรณีเสียชีวิต ค่ารักษาพยาบาลระยะยาว
+  กรณีที่พิการ และรายได้ที่สูญเสียไป
+              </p>
+              <p>
+                ให้ท่านพิจารณามูลค่าความสูญเสียอื่นๆ ที่เกิดขึ้น เช่น ความเจ็บปวดและทุกข์ทรมานของผู้
+ประสบอุบัติเหตุและครอบครัว การสูญเสียสมรรถนะในการเคลื่อนไหวและการรู้คิดอย่างถาวร รวมไปถึง
+ความเจ็บปวดและทุกข์ทรมานที่เป็นผลกระทบต่อเนื่อง โดยไม่รวมทรัพย์สินที่เสียหาย ท่านคิดว่า
+ความสูญเสียที่เกี่ยวข้องกับจิตใจและคุณภาพชีวิตที่ลดลงหลังจากประสบอุบัติเหตุ ควรเป็นเท่าใด
+เมื่อเทียบกับต้นทุนอื่นๆ ที่ประเมินได้ด้วยตัวเงิน
+              </p>
+
+            <p>
+            <h4>ตัวอย่างต้นทุนที่เกี่ยวข้องกับมนุษย์เฉลี่ยต่อคน เมื่อประสบอุบัติเหตุ 1 ครั้ง (บาท)</h4>
+            </p>
+
+            <p>
+              <table style="width:100%">
+      <tr>
+        <th rowspan="2">ประเภทต้นทุน</th>
+        <th colspan="4">ระดับความรุนแรงของอาการ</th>
+      </tr>
+      <tr>
+        <th>เสียชีวิต </th>
+        <th>พิการ</th>
+        <th>บาดเจ็บสาหัส</th>
+        <th>บาดเจ็บเล็กน้อย</th>
+      </tr>
+      <tr>
+        <td style="text-align: left">ค่ารักษาพยาบาล</td>
+        <td style="text-align: center">700</td>
+        <td style="text-align: center">21,000</td>
+        <td style="text-align: center">21,000</td>
+        <td style="text-align: center">1,300</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">ค่าปลงศพ </td>
+        <td style="text-align: center">35,000</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">ค่ารักษาพยาบาลระยะยาว</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">350,000</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">รายได้ที่สูญเสียไปในอนาคต</td>
+        <td style="text-align: center">2,200,000</td>
+        <td style="text-align: center">1,700,000</td>
+        <td style="text-align: center">4,000</td>
+        <td style="text-align: center">800</td>
+      </tr>
+      <tr style="font-weight: bold">
+        <td style="text-align: center">รวม</td>
+        <td style="text-align: center">2,235,700</td>
+        <td style="text-align: center">2,071,000</td>
+        <td style="text-align: center">25,000</td>
+        <td style="text-align: center">2,100</td>
+      </tr>
+
+    </table>
+            </p>
+
+            <p>
+            <h4>กรณีที่ 1 หากหัวหน้าครอบครัวเสียชีวิตจากอุบัติเหตุทางถนน และได้รับการชดเชยเท่ากับ 2,235,700 บาท ท่านคิดว่าเพียงพอหรือไม่</h4>
+            <label for="case-4-1-enough"><input type="radio" value="1" name="enough" id="case-4-1-enough">เพียงพอแล้ว</label>
+            <label for="case-4-1-not-enough"><input type="radio" value="2" name="not-enough" id="case-4-1-not-enough">ไม่เพียงพอ</label>
+            <input type="text" name="increased-amount" placeholder="ควรได้รับ(บาท)ุ">
+            <label for="case-4-1-too-much"><input type="radio" value="3" name="too-much" id="case-4-1-too-much">มากเกินไป</label>
+            <input type="text" name="decreased-amount" placeholder="ควรได้รับ(บาท)ุุ">
+            </p>
+
+            <p>
+            <h4>กรณีที่ 2 หากหัวหน้าครอบครัวพิการจากอุบัติเหตุทางถนน และได้รับการชดเชยเท่ากับ 2,071,000 บาท ท่านคิดว่าเพียงพอหรือไม่่</h4>
+            <label for="case-4-2-enough"><input type="radio" value="1" name="enough" id="case-4-2-enough">เพียงพอแล้ว</label>
+            <label for="case-4-2-not-enough"><input type="radio" value="2" name="not-enough" id="case-4-2-not-enough">ไม่เพียงพอ</label>
+            <input type="text" name="increased-amount" placeholder="ควรได้รับ(บาท)ุ">
+            <label for="case-4-2-too-much"><input type="radio" value="3" name="too-much" id="case-4-2-too-much">มากเกินไป</label>
+            <input type="text" name="decreased-amount" placeholder="ควรได้รับ(บาท)ุุ">
+            </p>
+
+            <p>
+            <h4>กรณีที่ 3 หากหัวหน้าครอบครัวได้รับบาดเจ็บสาหัสจากอุบัติเหตุทางถนน และได้รับการชดเชยเท่ากับ 25,000 บาท ท่านคิดว่าเพียงพอหรือไม</h4>
+            <label for="case-4-3-enough"><input type="radio" value="1" name="enough" id="case-4-3-enough">เพียงพอแล้ว</label>
+            <label for="case-4-3-not-enough"><input type="radio" value="2" name="not-enough" id="case-4-3-not-enough">ไม่เพียงพอ</label>
+            <input type="text" name="increased-amount" placeholder="ควรได้รับ(บาท)ุ">
+            <label for="case-4-3-too-much"><input type="radio" value="3" name="too-much" id="case-4-3-too-much">มากเกินไป</label>
+            <input type="text" name="decreased-amount" placeholder="ควรได้รับ(บาท)ุุ">
+            </p>
+
+            <p>
+            <h4>กรณีที่ 4 หากหัวหน้าครอบครัวได้รับบาดเจ็บเล็กน้อยจากอุบัติเหตุทางถนน และได้รับการชดเชยเท่ากับ 2,100 บาท ท่านคิดว่าเพียงพอหรือไม่
+่</h4>
+            <label for="case-4-4-enough"><input type="radio" value="1" name="enough" id="case-4-4-enough">เพียงพอแล้ว</label>
+            <label for="case-4-4-not-enough"><input type="radio" value="2" name="not-enough" id="case-4-4-not-enough">ไม่เพียงพอ</label>
+            <input type="text" name="increased-amount" placeholder="ควรได้รับ(บาท)ุ">
+            <label for="case-4-4-too-much"><input type="radio" value="3" name="too-much" id="case-4-4-too-much">มากเกินไป</label>
+            <input type="text" name="decreased-amount" placeholder="ควรได้รับ(บาท)ุุ">
+            </p>
+		<center>
+		<button type="reset" style="background-color:#ffaa95;">&nbsp;&nbsp;&nbsp;ล้างคำตอบ&nbsp;&nbsp;&nbsp;</button>
+		<button type="submit" style="background-color:#6ab3eb;">&nbsp;&nbsp;&nbsp;จบแบบสอบถาม&nbsp;&nbsp;&nbsp;</button>
+		</center>
+		</br>
+		</form>
+
+    </div>
+
+</body>
+</html>

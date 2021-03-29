@@ -1,0 +1,78 @@
+body {
+  background: url("6.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Style the form */
+.tab {
+  background-color: white;
+  border-radius: 40px;
+  opacity: 0.95;
+  margin: 100px auto;
+  padding: 45px;
+  width: 70%;
+  min-width: 300px;
+  color: black;
+}
+
+/* --------------------------------------------- */
+/* Input styling */
+
+/* Style the input fields */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="button"] {
+  padding: 8px;
+  width: 80%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+  margin: 0.25em 0 0.5em 0;
+}
+
+input[type="number"] {
+  width: 80%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 0 10px;
+}
+
+label {
+  display: block;
+}
+
+select {
+  padding: 8px;
+  width: 80%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+  margin: 0.25em 0 0.5em 0;
+}
+
+/* --------------------------------------------- */
+/* Specific element styling */
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+/*  Index template */
+#chooselang {
+  text-align: center;
+}
+
+/* Instruction template */
+#instruction {
+  text-indent: 30px;
+  line-height: 1.6;
+}
