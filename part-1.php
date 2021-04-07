@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+	<?php
     <div class="tab">
     <form method="post">
         <!-- Section description -->
@@ -437,6 +438,6 @@
 		</form>
 
     </div>
-
+?>
 </body>
 </html>
