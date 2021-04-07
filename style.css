@@ -99,7 +99,17 @@ a:hover {
   color: white;
 }
 
-input[type = submit] {
+button[type = reset] {
+            background-color: #FF6347;
+            border: none;
+            font-size: 20px;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            padding: 8px 16px;
+         }
+
+button[type = submit] {
             background-color: #4CAF50;
             border: none;
             font-size: 20px;
