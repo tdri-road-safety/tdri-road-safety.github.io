@@ -14,7 +14,7 @@
 
 	     <p>
                         <h4>จังหวัดที่เก็บข้อมูล <br>
-                        <select name="survey-prov" id="">
+                        <select name="survey-prov" id="" required="required">
                             <option value="" disabled selected></option>
 
                             <option value="กระบี่">กระบี่</option>
@@ -175,19 +175,22 @@
                         </h4>
                         </p>
             <p>
-            <h4>1. เพศ</h4>
-            <label for="male"><input type="radio" name="gender" value="1" id="male">ชาย</label>
-            <label for="female"><input type="radio" name="gender" value="2" id="female">หญิง</label>
-            <label for="other-gender"><input type="radio" name="gender" value="3" id="other-gender">อื่นๆ</label>
+            
+	    <label for="gender"><h4>1. เพศ:</h4></label>
+  <select name="genders" id="gender" required>
+    <option value="male">ชาย</option>
+    <option value="female">หญิง</option>
+    <option value="other-gender">อื่นๆ</option>
+  </select>
             </p>
 
             <p>
-            <h4>2. อายุ <br><input type="number" name="age" min="0"> </h4>
+            <h4>2. อายุ <br><input type="number" name="age" min="0" required="required"> </h4>
             </p>
            
             <p>
                         <h4>3. ภูมิลำเนาของผู้ตอบแบบสอบถาม <br>
-                        <select name="residing-prov" id="">
+                        <select name="residing-prov" id="" required="required">
                             <option value="" disabled selected></option>
 
                             <option value="กระบี่">กระบี่</option>
@@ -350,7 +353,7 @@
 
             <p>
             <h4>4. ระดับการศึกษาสูงสุด</h4>
-            <label for="edu1"><input type="radio" name="education" value="1" id="edu1">ไม่ได้รับการศึกษา</label>
+            <label for="edu1"><input type="radio" name="education" value="1" id="edu1" required>ไม่ได้รับการศึกษา</label>
             <label for="edu2"><input type="radio" name="education" value="2" id="edu2">ประถมศึกษา</label>
             <label for="edu3"><input type="radio" name="education" value="3" id="edu3">มัธยมต้น </label>
             <label for="edu4"><input type="radio" name="education" value="4" id="edu4">มัธยมปลาย/ปวช.</label>
@@ -363,7 +366,7 @@
 
             <p>
             <h4>5. อาชีพปัจจุบัน</h4>
-            <label for="job1"><input type="radio" value="1" name="career" id="job1">นักเรียน/นักศึกษา</label>
+            <label for="job1"><input type="radio" value="1" name="career" id="job1" required>นักเรียน/นักศึกษา</label>
             <label for="job2"><input type="radio" value="2" name="career" id="job2">แม่บ้าน/พ่อบ้าน เกษียณอายุ</label>
             <label for="job3"><input type="radio" value="3" name="career" id="job3">ข้าราชการ/พนักงานของรัฐ/รัฐวิสาหกิจ</label>
             <label for="job4"><input type="radio" value="4" name="career" id="job4">ประกอบธุรกิจส่วนตัว</label>
@@ -377,7 +380,7 @@
 
             <p>
             <h4>6. รายได้ส่วนตัว (บาท/เดือน)</h4>
-            <label for="incp1"><input type="radio" name="inc_personal" value="1" id="incp1">น้อยกว่า 5,000 บาท </label>
+            <label for="incp1"><input type="radio" name="inc_personal" value="1" id="incp1" required>น้อยกว่า 5,000 บาท </label>
             <label for="incp2"><input type="radio" name="inc_personal" value="2" id="incp2">5,000-10,000 บาท</label>
             <label for="incp3"><input type="radio" name="inc_personal" value="3" id="incp3">10,001-15,000 บาท</label>
             <label for="incp4"><input type="radio" name="inc_personal" value="4" id="incp4">15,001-20,000 บาท</label>
@@ -393,7 +396,7 @@
 
             <p>
             <h4>7. รายได้ครัวเรือน (บาทต่อเดือน)</h4>
-            <label for="inch1"><input type="radio" name="inc_family" value="1" id="inch1">น้อยกว่า 5,000 บาท </label>
+            <label for="inch1"><input type="radio" name="inc_family" value="1" id="inch1" required>น้อยกว่า 5,000 บาท </label>
             <label for="inch2"><input type="radio" name="inc_family" value="2" id="inch2">5,000-10,000 บาท</label>
             <label for="inch3"><input type="radio" name="inc_family" value="3" id="inch3">10,001-15,000 บาท</label>
             <label for="inch4"><input type="radio" name="inc_family" value="4" id="inch4">15,001-20,000 บาท</label>
@@ -409,7 +412,7 @@
 
             <p>
             <h4>8. ขนาดของครอบครัว</h4>
-            <label for="famsize1"><input type="radio" name="family_size" value="1" id="famsize1">1 คน</label>
+            <label for="famsize1"><input type="radio" name="family_size" value="1" id="famsize1" required>1 คน</label>
             <label for="famsize2"><input type="radio" name="family_size" value="2" id="famsize2">2 คน</label>
             <label for="famsize3"><input type="radio" name="family_size" value="3" id="famsize3">3-4 คน</label>
             <label for="famsize4"><input type="radio" name="family_size" value="4" id="famsize4">5-6 คน</label>
@@ -419,7 +422,7 @@
             </p>
 	    <p>
             <h4>9. ท่านเป็นผู้หา<u>รายได้หลัก</u>ภายในครอบครัว ใช่หรือไม่ </h4>
-            <label for="main_income_yes"><input type="radio" name="income" value="1" id="main_income_yes">ใช่</label>
+            <label for="main_income_yes"><input type="radio" name="income" value="1" id="main_income_yes" required>ใช่</label>
             <label for="main_income_no"><input type="radio" name="income" value="2" id="main_income_no">ไม่ใช่</label>
 
             </p>
