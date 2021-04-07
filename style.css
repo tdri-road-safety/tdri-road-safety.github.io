@@ -106,7 +106,6 @@ button[type = reset] {
             text-decoration: none;
             display: inline-block;
             color: white;
-            padding: 8px 16px;
          }
 
 button[type = submit] {
@@ -116,5 +115,4 @@ button[type = submit] {
             text-decoration: none;
             display: inline-block;
             color: white;
-            padding: 8px 16px;
          }
